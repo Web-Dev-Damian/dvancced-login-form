@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.second{
+    width: 66%;
+    height: 100%;
+    background-image: url('img.jpg');
+    background-size: 100% 100%;
+}
+.main{
+    width: 33%;
+    height: 100%;
+    padding: 80px 40px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+form{
+    height: 100%;
+    width: 100%;
+}
+form p{
+    font-size: 13px;
+    font-weight: 700;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+    border:none;
+    border-bottom:1px solid rgb(104, 104, 104);
+    outline: none;
+}
+.sub{
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.butoane{
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.singin,.login{
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 13px;
+
+    border-radius: 30px;
+    border:none;
+    transition: 0.5s;
+}
+.singin{
+    color: white;
+    background-color: palevioletred;
+}
+.singin:hover{
+    background-color: rgb(197, 75, 115);
+}
+.login{
+    color:black;
+    background-color: rgb(236, 236, 236);
+    position: relative;
+}
+.login a:hover+.login{
+    background-color: rgb(207, 207, 207);
+}
+.login a{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    border:none;
+}
